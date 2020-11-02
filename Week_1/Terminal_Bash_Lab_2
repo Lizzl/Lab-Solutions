@@ -1,0 +1,26 @@
+Last login: Mon Oct 19 14:32:07 on ttys001
+(base) akohn@Alices-MacBook-Pro-2 ~ % find /Users/ -name lorem.txt  
+find . -name "*.filetype" | wc -^C^C
+(base) akohn@Alices-MacBook-Pro-2 ~ % find . -name "*lorem" | wc -l
+cd ~/lorem
+^C
+(base) akohn@Alices-MacBook-Pro-2 ~ %  cd ~/Documents 
+(base) akohn@Alices-MacBook-Pro-2 Documents % cs ~/lab-bash/lorem
+zsh: command not found: cs
+(base) akohn@Alices-MacBook-Pro-2 Documents % cd ~/lab-bash/lorem
+cd: no such file or directory: /Users/akohn/lab-bash/lorem
+(base) akohn@Alices-MacBook-Pro-2 Documents % cd ~/lab-bash/
+cd: no such file or directory: /Users/akohn/lab-bash/
+(base) akohn@Alices-MacBook-Pro-2 Documents % lab-bash
+zsh: command not found: lab-bash
+(base) akohn@Alices-MacBook-Pro-2 Documents % cd lab-bash
+(base) akohn@Alices-MacBook-Pro-2 lab-bash % cd lorem
+(base) akohn@Alices-MacBook-Pro-2 lorem % wc -w sed.txt
+     131 sed.txt
+(base) akohn@Alices-MacBook-Pro-2 lorem % cd..
+zsh: command not found: cd..
+(base) akohn@Alices-MacBook-Pro-2 lorem % cd ..
+(base) akohn@Alices-MacBook-Pro-2 lab-bash % cd lorem-copy
+(base) akohn@Alices-MacBook-Pro-2 lorem-copy % grep -o -i et sed.txt | wc -l
+       4
+(base) akohn@Alices-MacBook-Pro-2 lorem-copy % 

@@ -1,0 +1,176 @@
+Last login: Mon Oct 19 10:34:10 on ttys000
+akohn@Alices-MacBook-Pro-2 ~ % cd ~/Documents
+akohn@Alices-MacBook-Pro-2 Documents % ls
+Adobe
+Apowersoft
+Digital Editions
+Emmy_6.pdf
+Emmy_7.pdf
+MacKeeper Backups
+Marketing Text Slotomania_Deutsch_Alice Edit.docx
+Marketing Text Slotomania_German Translate.docx
+PluralEyes
+Sichten.xlsx
+Taxi_9.pdf
+TerminalTest
+Zoom
+data-prework
+data_1.01_activities
+desktop-tutorial
+img20190707_10265721.pdf
+img20190707_21365255.pdf
+img20191016_07421514.pdf
+lab-bash
+lizzl.m3u
+akohn@Alices-MacBook-Pro-2 Documents % print("hello world")
+zsh: unknown file attribute: h
+akohn@Alices-MacBook-Pro-2 Documents % "hello world"
+zsh: command not found: hello world
+akohn@Alices-MacBook-Pro-2 Documents % echo hello world 
+hello world
+akohn@Alices-MacBook-Pro-2 Documents % mkdir new_dir
+akohn@Alices-MacBook-Pro-2 Documents % ls
+Adobe
+Apowersoft
+Digital Editions
+Emmy_6.pdf
+Emmy_7.pdf
+MacKeeper Backups
+Marketing Text Slotomania_Deutsch_Alice Edit.docx
+Marketing Text Slotomania_German Translate.docx
+PluralEyes
+Sichten.xlsx
+Taxi_9.pdf
+TerminalTest
+Zoom
+data-prework
+data_1.01_activities
+desktop-tutorial
+img20190707_10265721.pdf
+img20190707_21365255.pdf
+img20191016_07421514.pdf
+lab-bash
+lizzl.m3u
+new_dir
+akohn@Alices-MacBook-Pro-2 Documents % rmdir new_dir 
+akohn@Alices-MacBook-Pro-2 Documents % ls
+Adobe
+Apowersoft
+Digital Editions
+Emmy_6.pdf
+Emmy_7.pdf
+MacKeeper Backups
+Marketing Text Slotomania_Deutsch_Alice Edit.docx
+Marketing Text Slotomania_German Translate.docx
+PluralEyes
+Sichten.xlsx
+Taxi_9.pdf
+TerminalTest
+Zoom
+data-prework
+data_1.01_activities
+desktop-tutorial
+img20190707_10265721.pdf
+img20190707_21365255.pdf
+img20191016_07421514.pdf
+lab-bash
+lizzl.m3u
+akohn@Alices-MacBook-Pro-2 Documents % cp ~/Documents/lab-bas/lorem  
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+akohn@Alices-MacBook-Pro-2 Documents %  cd ~/Documents/lab-bash/lorem
+akohn@Alices-MacBook-Pro-2 lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+akohn@Alices-MacBook-Pro-2 lorem % cp sed.txt 
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+akohn@Alices-MacBook-Pro-2 lorem % cp sed.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+akohn@Alices-MacBook-Pro-2 lorem % cp -R sed.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+akohn@Alices-MacBook-Pro-2 lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+akohn@Alices-MacBook-Pro-2 lorem % cp -R sed.txt 
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+akohn@Alices-MacBook-Pro-2 lorem % cp -R sed.txt ~/Documents/lab-bash/lorem-copy
+akohn@Alices-MacBook-Pro-2 lorem % cd ~/Documents/lab-bash/lorem-copy 
+akohn@Alices-MacBook-Pro-2 lorem-copy % ls
+at.txt		lorem.txt	sed.txt
+akohn@Alices-MacBook-Pro-2 lorem-copy % ..
+zsh: permission denied: ..
+akohn@Alices-MacBook-Pro-2 lorem-copy % cd ..
+akohn@Alices-MacBook-Pro-2 lab-bash % cd ~
+akohn@Alices-MacBook-Pro-2 ~ % cd ~/Documents/lab-bas/lorem  
+cd: no such file or directory: /Users/akohn/Documents/lab-bas/lorem
+akohn@Alices-MacBook-Pro-2 ~ % cd lorem  
+cd: no such file or directory: lorem
+akohn@Alices-MacBook-Pro-2 ~ % ls
+Applications				Downloads				Music
+Creative Cloud Files			Dropbox					Pictures
+Creative Cloud Files (archived) (1)	Library					Public
+Desktop					Monero					jkvnkdv
+Documents				Movies
+akohn@Alices-MacBook-Pro-2 ~ % cd Documents
+akohn@Alices-MacBook-Pro-2 Documents % ls
+Adobe							Terminal SBash | Lab
+Apowersoft						TerminalTest
+Digital Editions					Zoom
+Emmy_6.pdf						data-prework
+Emmy_7.pdf						data_1.01_activities
+MacKeeper Backups					desktop-tutorial
+Marketing Text Slotomania_Deutsch_Alice Edit.docx	img20190707_10265721.pdf
+Marketing Text Slotomania_German Translate.docx		img20190707_21365255.pdf
+PluralEyes						img20191016_07421514.pdf
+Sichten.xlsx						lab-bash
+Taxi_9.pdf						lizzl.m3u
+akohn@Alices-MacBook-Pro-2 Documents % cd lab-bash/lorem
+akohn@Alices-MacBook-Pro-2 lorem % ls    
+at.txt		at.txte		lorem.txt	sed.txt
+akohn@Alices-MacBook-Pro-2 lorem % cp -R at.txt ; lorem.txt  ~/Documents/lab-bash/lorem-copy
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+zsh: command not found: lorem.txt
+akohn@Alices-MacBook-Pro-2 lorem % cp _R at.txt;lorem.txt ~/Documents/lab-bash/lorem-copy
+cp: _R: No such file or directory
+zsh: command not found: lorem.txt
+akohn@Alices-MacBook-Pro-2 lorem % cp _R at.txt | lorem.txt ~/Documents/lab-bash/lorem-copy
+zsh: command not found: lorem.txt
+cp: _R: No such file or directory
+akohn@Alices-MacBook-Pro-2 lorem % cp -R at.txt lorem.txt ~/Documents/lab-bash/lorem-copy 
+akohn@Alices-MacBook-Pro-2 lorem % cd ..
+akohn@Alices-MacBook-Pro-2 lab-bash % cd lorem-copy
+akohn@Alices-MacBook-Pro-2 lorem-copy % ls
+at.txt		lorem.txt	sed.txt
+akohn@Alices-MacBook-Pro-2 lorem-copy % less sed.txt ~/Documents/lab-bash/lorem
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END) - Next: /Users/akohn/Documents/lab-bash/lorem

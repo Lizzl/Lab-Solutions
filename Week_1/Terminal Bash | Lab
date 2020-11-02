@@ -1,0 +1,235 @@
+Last login: Mon Oct 19 10:34:10 on ttys000
+akohn@Alices-MacBook-Pro-2 ~ % cd ~/Documents
+akohn@Alices-MacBook-Pro-2 Documents % ls
+Adobe
+Apowersoft
+Digital Editions
+Emmy_6.pdf
+Emmy_7.pdf
+MacKeeper Backups
+Marketing Text Slotomania_Deutsch_Alice Edit.docx
+Marketing Text Slotomania_German Translate.docx
+PluralEyes
+Sichten.xlsx
+Taxi_9.pdf
+TerminalTest
+Zoom
+data-prework
+data_1.01_activities
+desktop-tutorial
+img20190707_10265721.pdf
+img20190707_21365255.pdf
+img20191016_07421514.pdf
+lab-bash
+lizzl.m3u
+akohn@Alices-MacBook-Pro-2 Documents % print("hello world")
+zsh: unknown file attribute: h
+akohn@Alices-MacBook-Pro-2 Documents % "hello world"
+zsh: command not found: hello world
+akohn@Alices-MacBook-Pro-2 Documents % echo hello world 
+hello world
+akohn@Alices-MacBook-Pro-2 Documents % mkdir new_dir
+akohn@Alices-MacBook-Pro-2 Documents % ls
+Adobe
+Apowersoft
+Digital Editions
+Emmy_6.pdf
+Emmy_7.pdf
+MacKeeper Backups
+Marketing Text Slotomania_Deutsch_Alice Edit.docx
+Marketing Text Slotomania_German Translate.docx
+PluralEyes
+Sichten.xlsx
+Taxi_9.pdf
+TerminalTest
+Zoom
+data-prework
+data_1.01_activities
+desktop-tutorial
+img20190707_10265721.pdf
+img20190707_21365255.pdf
+img20191016_07421514.pdf
+lab-bash
+lizzl.m3u
+new_dir
+akohn@Alices-MacBook-Pro-2 Documents % rmdir new_dir 
+akohn@Alices-MacBook-Pro-2 Documents % ls
+Adobe
+Apowersoft
+Digital Editions
+Emmy_6.pdf
+Emmy_7.pdf
+MacKeeper Backups
+Marketing Text Slotomania_Deutsch_Alice Edit.docx
+Marketing Text Slotomania_German Translate.docx
+PluralEyes
+Sichten.xlsx
+Taxi_9.pdf
+TerminalTest
+Zoom
+data-prework
+data_1.01_activities
+desktop-tutorial
+img20190707_10265721.pdf
+img20190707_21365255.pdf
+img20191016_07421514.pdf
+lab-bash
+lizzl.m3u
+akohn@Alices-MacBook-Pro-2 Documents % cp ~/Documents/lab-bas/lorem  
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+akohn@Alices-MacBook-Pro-2 Documents %  cd ~/Documents/lab-bash/lorem
+akohn@Alices-MacBook-Pro-2 lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+akohn@Alices-MacBook-Pro-2 lorem % cp sed.txt 
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+akohn@Alices-MacBook-Pro-2 lorem % cp sed.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+akohn@Alices-MacBook-Pro-2 lorem % cp -R sed.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+akohn@Alices-MacBook-Pro-2 lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+akohn@Alices-MacBook-Pro-2 lorem % cp -R sed.txt 
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+akohn@Alices-MacBook-Pro-2 lorem % cp -R sed.txt ~/Documents/lab-bash/lorem-copy
+akohn@Alices-MacBook-Pro-2 lorem % cd ~/Documents/lab-bash/lorem-copy 
+akohn@Alices-MacBook-Pro-2 lorem-copy % ls
+at.txt		lorem.txt	sed.txt
+akohn@Alices-MacBook-Pro-2 lorem-copy % ..
+zsh: permission denied: ..
+akohn@Alices-MacBook-Pro-2 lorem-copy % cd ..
+akohn@Alices-MacBook-Pro-2 lab-bash % cd ~
+akohn@Alices-MacBook-Pro-2 ~ % cd ~/Documents/lab-bas/lorem  
+cd: no such file or directory: /Users/akohn/Documents/lab-bas/lorem
+akohn@Alices-MacBook-Pro-2 ~ % cd lorem  
+cd: no such file or directory: lorem
+akohn@Alices-MacBook-Pro-2 ~ % ls
+Applications				Downloads				Music
+Creative Cloud Files			Dropbox					Pictures
+Creative Cloud Files (archived) (1)	Library					Public
+Desktop					Monero					jkvnkdv
+Documents				Movies
+akohn@Alices-MacBook-Pro-2 ~ % cd Documents
+akohn@Alices-MacBook-Pro-2 Documents % ls
+Adobe							Terminal SBash | Lab
+Apowersoft						TerminalTest
+Digital Editions					Zoom
+Emmy_6.pdf						data-prework
+Emmy_7.pdf						data_1.01_activities
+MacKeeper Backups					desktop-tutorial
+Marketing Text Slotomania_Deutsch_Alice Edit.docx	img20190707_10265721.pdf
+Marketing Text Slotomania_German Translate.docx		img20190707_21365255.pdf
+PluralEyes						img20191016_07421514.pdf
+Sichten.xlsx						lab-bash
+Taxi_9.pdf						lizzl.m3u
+akohn@Alices-MacBook-Pro-2 Documents % cd lab-bash/lorem
+akohn@Alices-MacBook-Pro-2 lorem % ls    
+at.txt		at.txte		lorem.txt	sed.txt
+akohn@Alices-MacBook-Pro-2 lorem % cp -R at.txt ; lorem.txt  ~/Documents/lab-bash/lorem-copy
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+zsh: command not found: lorem.txt
+akohn@Alices-MacBook-Pro-2 lorem % cp _R at.txt;lorem.txt ~/Documents/lab-bash/lorem-copy
+cp: _R: No such file or directory
+zsh: command not found: lorem.txt
+akohn@Alices-MacBook-Pro-2 lorem % cp _R at.txt | lorem.txt ~/Documents/lab-bash/lorem-copy
+zsh: command not found: lorem.txt
+cp: _R: No such file or directory
+akohn@Alices-MacBook-Pro-2 lorem % cp -R at.txt lorem.txt ~/Documents/lab-bash/lorem-copy 
+akohn@Alices-MacBook-Pro-2 lorem % cd ..
+akohn@Alices-MacBook-Pro-2 lab-bash % cd lorem-copy
+akohn@Alices-MacBook-Pro-2 lorem-copy % ls
+at.txt		lorem.txt	sed.txt
+akohn@Alices-MacBook-Pro-2 lorem-copy % less sed.txt ~/Documents/lab-bash/lorem
+akohn@Alices-MacBook-Pro-2 lorem-copy % less at.txt lorem.txt ~/Documents/lab-bash/lorem
+akohn@Alices-MacBook-Pro-2 lorem-copy % tail -3 sed.txt 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+akohn@Alices-MacBook-Pro-2 lorem-copy % head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+akohn@Alices-MacBook-Pro-2 lorem-copy % echo Homo homini lupus. >  sed.txt
+akohn@Alices-MacBook-Pro-2 lorem-copy % less sed.txt
+akohn@Alices-MacBook-Pro-2 lorem-copy % cd ..                                        
+akohn@Alices-MacBook-Pro-2 lab-bash % cd lorem
+akohn@Alices-MacBook-Pro-2 lorem % cp -R sed.txt ~/Documents/lab-bash/lorem-copy
+akohn@Alices-MacBook-Pro-2 lorem % cd..
+zsh: command not found: cd..
+akohn@Alices-MacBook-Pro-2 lorem % cd ..
+akohn@Alices-MacBook-Pro-2 lab-bash % cd lorem-copy
+akohn@Alices-MacBook-Pro-2 lorem-copy % ls
+at.txt		lorem.txt	sed.txt
+akohn@Alices-MacBook-Pro-2 lorem-copy % less sed.txt
+akohn@Alices-MacBook-Pro-2 lorem-copy % echo Homo homini lupus. >>  sed.txt
+akohn@Alices-MacBook-Pro-2 lorem-copy % tail -1 sed.txt
+Homo homini lupus.
+akohn@Alices-MacBook-Pro-2 lorem-copy % ail -3 sed.txt
+zsh: command not found: ail
+akohn@Alices-MacBook-Pro-2 lorem-copy % tail -3 sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+akohn@Alices-MacBook-Pro-2 lorem-copy % pwd
+/Users/akohn/Documents/lab-bash/lorem-copy
+akohn@Alices-MacBook-Pro-2 lorem-copy % dscl . list /Users | grep -v '_'
+akohn
+daemon
+Guest
+nobody
+root
+akohn@Alices-MacBook-Pro-2 lorem-copy % cd ..
+akohn@Alices-MacBook-Pro-2 lab-bash % lorem
+zsh: command not found: lorem
+akohn@Alices-MacBook-Pro-2 lab-bash % cd lorem
+akohn@Alices-MacBook-Pro-2 lorem % sed -n 's/et/ET/gpw at_2.txt' at.txt
+sed: at_2.txt: Operation not permitted
+akohn@Alices-MacBook-Pro-2 lorem % sed -n 's/et/ET/gpw at2.txt' at.txt 
+sed: at2.txt: Operation not permitted
+akohn@Alices-MacBook-Pro-2 lorem % cd ..
+akohn@Alices-MacBook-Pro-2 lab-bash % lorem-copy
+zsh: command not found: lorem-copy
+akohn@Alices-MacBook-Pro-2 lab-bash % cd lorem-copy
+akohn@Alices-MacBook-Pro-2 lorem-copy % sed 's/et/ET/g' at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga. 
+Et harum quidem rerum facilis est ET expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET 
+ut ET voluptates repudiandae sint ET molestiae non recusandae. 
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellat
+akohn@Alices-MacBook-Pro-2 lorem-copy % cd ..
+akohn@Alices-MacBook-Pro-2 lab-bash % cd lorem
+akohn@Alices-MacBook-Pro-2 lorem % find . -name “*.txt” 
+zsh: no matches found: “*.txt”
+akohn@Alices-MacBook-Pro-2 lorem % find .-name “*.txt” 
+zsh: no matches found: “*.txt”
+akohn@Alices-MacBook-Pro-2 lorem % find . -type f -name '*.txt'
+./at.txt
+./lorem.txt
+./sed.txt
+akohn@Alices-MacBook-Pro-2 lorem % wc -l sed.txt 
+       9 sed.txt
+akohn@Alices-MacBook-Pro-2 lorem % ~/sed.txt | wc -l     
+zsh: no such file or directory: /Users/akohn/sed.txt
+       0
+akohn@Alices-MacBook-Pro-2 lorem % pwd             
+/Users/akohn/Documents/lab-bash/lorem
+akohn@Alices-MacBook-Pro-2 lorem % cat /Users/akohn/Documents/lab-bash/lorem | wc -l
+cat: /Users/akohn/Documents/lab-bash/lorem: Is a directory
+       0
+akohn@Alices-MacBook-Pro-2 lorem % cat /Users/akohn/Documents/lab-bash/lorem/sed.txt | wc -l
+       9
+akohn@Alices-MacBook-Pro-2 lorem % find . -type f -name 'lorem'
+akohn@Alices-MacBook-Pro-2 lorem % find . -name "*lorem" | wc -l
+       0
+akohn@Alices-MacBook-Pro-2 lorem % cd
+akohn@Alices-MacBook-Pro-2 ~ % find . -name "*lorem" | wc -l
+
