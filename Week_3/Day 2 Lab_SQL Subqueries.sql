@@ -140,16 +140,43 @@ SELECT title FROM sakila.film
 
 
 #Subquery
-SELECT customer_id, sum(amount) FROM payment
-WHERE SUM(amount) = (SELECT MAX(amount) FROM payment)
-GROUP BY customer_id;
-
+SELECT customer_id, SUM(amount) FROM payment
+GROUP BY customer_id
+HAVING SUM(amount) = (SELECT MAX(SUM(amount)) FROM payment);
+#error message Invalid use of GRoup function
 
 SELECT customer_id FROM payment
 GROUP BY customer_id
 ORDER BY sum(amount) DESC
 LIMIT 1;
 
+#Subquery 2
+SELECT inventory_id FROM rental
+WHERE customer_id = (SELECT customer_id FROM payment
+GROUP BY customer_id
+ORDER BY sum(amount) DESC
+LIMIT 1);
+
+#Subquery 3
+SELECT film_id FROM inventory
+WHERE inventory_id IN (SELECT inventory_id FROM rental
+WHERE customer_id = (SELECT customer_id FROM payment
+GROUP BY customer_id
+ORDER BY sum(amount) DESC
+LIMIT 1));
+
+#Main query 
+SELECT title from film
+WHERE film_id IN (SELECT film_id FROM inventory
+WHERE inventory_id IN (SELECT inventory_id FROM rental
+WHERE customer_id = (SELECT customer_id FROM payment
+GROUP BY customer_id
+ORDER BY sum(amount) DESC
+LIMIT 1)));
+
+
+
+#Tried to do this one as well wit temporary table but received error messages
 drop temporary table if exists rental_details;
 
 create temporary table sakila.rental_details
@@ -157,16 +184,20 @@ SELECT f.title, f.film_id, i.inventory_id, r.customer_id FROM sakila.film AS f
 	INNER JOIN sakila.inventory AS i USING (film_id)
 	INNER JOIN sakila.rental AS r USING (inventory_id);
     
-
-SELECT title FROM film
-WHERE film_id IN (SELECT inventory_id FROM inventory 
-WHERE inventory_id = (SELECT customer_id FROM payment
-ORDER BY sum(amount) DESC
-LIMIT 1));
-
-
-
+#Error Code: 1235. This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
 
 
 
 #Customers who spent more than the average payments.
+
+#Subquery
+SELECT customer_id FROM payment 
+GROUP BY customer_id, amount
+HAVING amount > (SELECT AVG(amount) FROM payment);
+
+
+#Main query
+SELECT first_name, last_name FROM customer
+WHERE customer_id IN (SELECT customer_id FROM payment 
+GROUP BY customer_id, amount
+HAVING amount > (SELECT AVG(amount) FROM payment));
